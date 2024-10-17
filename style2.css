@@ -1,0 +1,655 @@
+/* Reset some default styles for margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,500&display=swap');
+
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #80C432;
+    margin: 0;
+}
+
+header {
+    width: 135px;
+    height: 100%;
+    position: fixed;
+}
+
+nav {
+    width: 95%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1;
+    position: absolute;
+}
+
+.title {
+    width: 50px;
+    height: 50px;
+    background-image: url(./Images/logosc.svg);
+    background-size: cover;
+    zoom: 3;
+    position: absolute;
+    top: 2px;
+    left: -3px;
+}
+
+nav li {
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    cursor: pointer;
+    
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.40);
+    z-index: -1;
+    border-radius: 10px;
+    transform: translateY(-10px);
+    transition: 0.7s;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav li .accueil-text {
+    display: none;
+    position: absolute;
+    top: 50px;
+    color: white;
+    left: -10px;
+    font-family: Poppins,sans-serif;
+    font-size: 18px;
+}
+nav li .accueil2-text {
+    display: none;
+    position: absolute;
+    top: 55px;
+    color: white;
+    left: -20px;
+    font-family: Poppins,sans-serif;
+    font-size: 18px;
+}
+nav li .accueil3-text {
+    display: none;
+    position: absolute;
+    top: 50px;
+    color: white;
+    left: -25px;
+    font-family: Poppins,sans-serif;
+    font-size: 16px;
+}
+nav li .accueil4-text {
+    display: none;
+    position: absolute;
+    top: 50px;
+    color: white;
+    left: -20px;
+    font-family: Poppins,sans-serif;
+    font-size: 18px;
+}
+
+
+nav li:hover span {
+    display: block;
+    transition:0.5s ;
+}
+
+.accueil {
+    width: 30px;
+    height: 30px;
+    background-image: url(./Images/Frame.svg);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accueil2 {
+    width: 30px;
+    height: 30px;
+    background-image: url(./Images/icone-co1.svg);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accueil3 {
+    width: 30px;
+    height: 30px;
+    background-image: url(./Images/icon-co2.svg);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.accueil4 {
+    width: 30px;
+    height: 30px;
+    background-image: url(./Images/Deco.svg);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 90%;
+    height: 98.7%;
+    background-color: #F8F8F8;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 56px 0 0 80px;
+    overflow: scroll;
+    margin: 5px 5px 5px 0;
+}
+.hero-bar{
+    width: 100%;
+    height: 120px;
+    position: relative;
+    left: -30px;
+}
+
+.search {
+    width: 490px;
+    height: 50px;
+    border-radius: 16px;
+    background: #E5E5E5;
+    position: absolute;
+    top: 40px;
+    left: 65px;
+    border: none;
+    padding: 0 45px;
+    outline: none;
+}
+
+.envoyer {
+    background-image: url(./Images/search-icon.svg);
+    width: 21px;
+    height: 21px;
+    background-size: cover;
+    position: absolute;
+    border: none;
+    right: 520px;
+    top: 54px;
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+.notif{
+    width: 85px;
+    height: 40px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 260px;
+    top: 52px;
+}
+.notif a .icon1{
+    background-image: url(./Images/notif-icon1.svg);
+    background-size: cover;
+    width: 30px;
+    height: 28px;
+    display: block;
+}
+.notif a .icon2{
+    background-image: url(./Images/notif-icon2.svg);
+    background-size: cover;
+    width: 25px;
+    height: 28px;
+    display: block;
+}
+.info-client{
+    width: 200px;
+    height: 81px;
+    position: absolute;
+    right: 20px;
+    top: 28px;
+    display: flex;
+    align-items: center;
+    color: #0D0D0D;
+    font-family: Poppins,sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.info-client .text{
+    width: 58%;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.Abrev{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: solid 3px #cecece;
+    font-weight: 800;
+    font-size: 24px;
+}
+.aide1{
+    width: 45%;
+    height: 220px;
+    border-radius: 30px;
+    margin: 50px 50px 0 80px;
+    border: solid rgba(52, 52, 67, 0.1);
+    background-color: #FFF;
+}
+.aide1 .illustration{
+    background-image: url(./Images/image-aide.jpeg);
+    height: 145px;
+    width: 100%;
+    background-size: cover;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+.aide{
+    padding-bottom: 80px;
+}
+.aide a{
+    text-decoration: none;
+}
+.aide-text{
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 75px;
+    padding-left: 30px;
+}
+.info-client-section{
+    position: absolute;
+    left: 130px;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: Poppins,sans-serif;
+}
+.calendrier{
+    width: 365px;
+    height: 475px;
+    background-color: #FFF;
+    position: absolute;
+    top: 120px;
+    right: 55px;
+    font-family: Poppins,sans-serif;
+    border-radius: 16px;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+tr{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+td{
+    width: 25px;
+    text-align: center;
+}
+.last-tr{
+    justify-content: flex-start;
+    padding-left: 8px;
+}
+.mois{
+    font-size: 20px;
+    padding: 30px 30px 30px 70px;
+    display: flex;
+    font-weight: 700;
+}
+.detail-meet{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: flex-start;
+    border-radius: 10.241px;
+    background: #F0F9FD;
+    padding-left: 20px;
+    margin: 0 25px;
+
+}
+.logo-name{
+    width: 60px;
+    height: 60px;
+    border-radius:50px;
+    background-image: linear-gradient(66deg, #57B4DE -5.25%, #58B6DD 35.43%, #3B29AB 98.77%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+}
+.date{
+    color: rgba(13, 13, 13, 0.60);
+}
+.all-meet{
+    display: flex;
+    justify-content: space-between;
+}
+.all-meet span{
+    padding-bottom: 10px;
+}
+.all-meet span:first-child{
+    padding-left: 30px;
+    font-size: 20.483px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40.965px;
+}
+.all-meet span:last-child{
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+.all-meet span:last-child a{
+    color: #007E85;
+    font-size: 12.29px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.579px;
+}
+.info-doc{
+    position: absolute;
+    right: 40px;
+    top: 38px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 15px;
+    height: 35px;
+}
+.image-doc{
+    background-image: url(./Images/docteur2.jpg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    border-radius: 30px;
+}
+.nom-doc{
+    color: var(--DMV-Black, #23262F);
+    font-family: Poppins;
+    font-size: 16.386px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.info-docteur-section{
+    color: #0D0D0D;
+    font-family: Poppins,sans-serif;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    left: 40px;
+}
+
+.block-doc{
+    width: 600px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 16.386px;
+    background: linear-gradient(66deg, rgba(82, 178, 184, 0.10) -5.25%, rgba(128, 196, 50, 0.34) 35.43%, #92DF3A 98.77%);
+}
+.doc-detail{
+    position: relative;
+    top: 50px;
+    left: 40px;
+}
+.block-doc span:first-child{
+    color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight:400;
+line-height: normal;
+padding-left: 40px;
+position: relative;
+top: 20px;
+}
+.block-doc span:last-child{
+    color: #000;
+    padding-left: 75px;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    top: 20px;
+    left: -32px;
+}
+.number-patient{
+    
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.55);
+    width: 150px;
+    height: 55px;
+    padding: 15px;
+    
+}
+.number-patient:hover{
+    box-shadow: -2px 11px 13px 2px grey;
+    transition: .4s;
+}
+.info-detail-bar{
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    top: 125px;
+    left: 15px;
+    z-index: 1;
+}
+.card-patient{
+    font-family: Poppins,sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.card-patient-nombre{
+    font-family: Poppins,sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+}
+.rectangle-green{
+    border-radius: 12.646px;
+    background: #DFFDDD;
+    height: 30px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+    right: -100px;
+    gap: 10px;
+    box-shadow: -2px 7px 8px 2px grey;
+}
+.rectangle-red{
+    border-radius: 12.646px;
+    background: #FBC3C3;
+    height: 30px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+    right: -100px;
+    gap: 10px;
+    box-shadow: -2px 7px 8px 2px grey;
+}
+.pourcentage-green{
+    color: #008000;
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+}
+.stonks-up{
+    background-image: url(./Images/stonks.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pourcentage-red{
+    color: #D30404;
+    font-family: Poppins,sans-serif;
+    font-size: 14px;
+}
+.stonks-bas{
+    background-image: url(./Images/stonks-bas.svg);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.docteur-image{
+    background-image: url(./Images/docteur2sbc2.png);
+    width: 513px;
+    height: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -90px;
+    right: 470px;
+    z-index: 0;
+}
+.list-patient{
+    background-color: #FFF;
+    width: 600px;
+    height: 390px;
+    position: relative;
+    left: 40px;
+    bottom: -90px;
+    border-radius: 16.386px;
+}
+.title-list{
+    color: #000;
+font-family: Poppins,sans-serif;
+font-size: 24.579px;
+font-style:normal;
+font-weight: 400;
+line-height: normal;
+position: relative;
+top: 25px;
+left: 30px;
+}
+.dom a{
+    text-decoration: none;
+    color:black;
+}
+.consultation-list{
+    color: #000;
+    font-family: Poppins,sans-serif;
+    font-size: 24.579px;
+    font-style:normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    top: 25px;
+    left: 465px;
+    display: none;
+}
+.dom{
+    position: relative;
+    height: 55%;
+    width: 57%;
+    bottom: -70px;
+    font-family: Poppins,sans-serif;
+    overflow: scroll;
+    
+}
+li{
+    display: flex;
+}
+.dom li{
+    list-style: none;
+    gap: 35px;
+    margin-left: 30px;
+    padding: 10px 0;
+}
+.bar{
+    background-image: url(./Images/Vector3.svg);
+    width: 16px;
+    height: 15px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 13px;
+    right: -35px;
+}
+.logo-patient{
+    width: 50px;
+    height: 50px;
+    background-image: url(./Images/patient-logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins,sans-serif;
+}
+.namep{
+    display: flex;
+    flex-direction: column;
+}
+.quand{
+    color: #F62088;
+    font-size: 12px;
+}
+.heure{
+    color: #F62088;
+    border-radius: 8.193px;
+    background: rgba(246, 32, 136, 0.15);
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-consul{
+    width: 365.195px;
+    height: 283.736px;
+    position: absolute;
+    margin: 0 20px 10px 10px;
+    right: 0;
+    top: 85px;
+    border-radius: 16.386px;
+    border: 1.024px solid rgb(251, 204, 227);
+
+}
+.patient-consul-info{
+    display: flex;
+    justify-content: center;
+    
+}
+.m{
+    display: flex;
+    flex-direction: column;
+}
